@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Herb Culture Shop</title>
+    <link rel="stylesheet" href="Home.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="./Home.html"><img src="./img/Logo Herb.png" alt="Logo" width="30%"></a>
+        </div>
+        <div class="botoes">
+            <a href="./Login.html"><button class="button login">Login</button></a>
+            <a href="./Cadastro.html"><button class="button cadastro">Cadastrar</button></a>
+            <a href="./Produtos.html"><button class="button produtos">Produtos</button></a>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="content">
+            <p>Quem somos nós?<br>A HERB CULTURE SHOP é uma loja especializada na venda de ervas medicinais. Aqui você
+                encontrará um mercado de vendas de ervas e aparatos para cultivo.</p>
+            <div class="buttons">
+                <button onclick="window.location.href='./produtos.html'">Ver produtos</button>
+            </div>
+        </div>
+        <div class="product-slider">
+            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+            <div class="slides">
+                <div class="slide">
+                    <img src="./img/alecrim.png" alt="Produto 1">
+                    <p>Alecrim</p>
+                </div>
+                <div class="slide">
+                    <img src="./img/CBD.png" alt="Produto 2">
+                    <p>Cidreira</p>
+                </div>
+                <div class="Tomilho">
+                    <img src="./img/produto3.jpg" alt="Produto 3">
+                    <p>Produto 3</p>
+                </div>
+            </div>
+            <button class="next" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>Contato</h3>
+                <ul>
+                    <li>Endereço: Rua Cilada, 666</li>
+                    <li>Telefone: (31) 1234-5678</li>
+                    <li>Email: contato@herbshop.com</li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Navegação</h3>
+                <ul>
+                    <li><a href="./Produtos.html">Produtos</a></li>
+                    <li><a href="./Index.html">Sobre Nós</a></li>
+                    <li><a href="./contato.html">Contato</a></li>
+                </ul>
+            </div>
+            <div class="footer-column footer-newsletter">
+                <h3>Atualizações</h3>
+                <p>Inscreva-se para atualizações.</p>
+                <input type="email" placeholder="Seu email">
+                <button>Inscrever-se</button>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; Todos os direitos reservados HERB CULTURE SHOP.
+        </div>
+    </footer>
+</body>
+
+</html>
